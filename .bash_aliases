@@ -32,12 +32,7 @@ alias u='upgrade'
 
 alias self-update='rm -rf ~/.bash_aliases && wget https://raw.githubusercontent.com/jsas-development/bash-helpers/master/.bash_aliases -O ~/.bash_aliases && source ~/.bashrc'
 
-#############################################################################
-## PHP: COMPOSER
-#############################################################################
-alias composer='~/composer.phar'
-alias composer-install='rm -rf vendor/ && rm -rf composer.lock && composer install --optimize-autoloader --prefer-dist'
-alias composer-update='composer upadate --optimize-autoloader --prefer-dist'
+alias update-bash-git='rm -rf ~/.bash_git && wget https://raw.githubusercontent.com/jsas-development/bash-helpers/master/.bash_git -O ~/.bash_git && source ~/.bashrc'
 
 #############################################################################
 ## VIM
