@@ -8,12 +8,13 @@ Add to the `.bashrc`:
 
 ```bash
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+# Aliases & GIT
+if [ -e "${HOME}/.bash_aliases" ]; then
+    source "${HOME}/.bash_aliases"
 fi
 
-if [ -f ~/.bash_git ]; then
-    . ~/.bash_git
+if [ -e "${HOME}/.bash_git" ]; then
+    source "${HOME}/.bash_git"
 fi
 
 ```
