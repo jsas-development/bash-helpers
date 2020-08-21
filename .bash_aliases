@@ -30,9 +30,7 @@ alias unlink-all='find . -type l -exec unlink {} \;'
 alias upgrade='sudo apt autoremove -y && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y'
 alias u='upgrade'
 
-alias self-update='rm -rf ~/.bash_aliases && wget https://raw.githubusercontent.com/jsas-development/bash-helpers/master/.bash_aliases -O ~/.bash_aliases && source ~/.bashrc'
-
-alias update-bash-git='rm -rf ~/.bash_git && wget https://raw.githubusercontent.com/jsas-development/bash-helpers/master/.bash_git -O ~/.bash_git && source ~/.bashrc'
+alias self-update='jsas-load-aliases && jsas-load_bash-git'
 
 #############################################################################
 ## VIM

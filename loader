@@ -1,0 +1,13 @@
+
+# jSAS Development Integrations
+alias jsas-load-aliases='rm -rf ~/.bash_aliases && wget https://raw.githubusercontent.com/jsas-development/bash-helpers/master/.bash_aliases -O ~/.bash_aliases && source ~/.bashrc'
+alias jsas-load-bash-git='rm -rf ~/.bash_git && wget https://raw.githubusercontent.com/jsas-development/bash-helpers/master/.bash_git -O ~/.bash_git && source ~/.bashrc'
+
+if [ -e "${HOME}/.bash_aliases" ]; then
+    source "${HOME}/.bash_aliases"
+fi
+
+if [ -e "${HOME}/.bash_git" ]; then
+    source "${HOME}/.bash_git"
+fi
+
