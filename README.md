@@ -4,17 +4,10 @@ Bash Helpers is a collection of bash scripts and other helpful things...
 
 ## Loading the scripts
 
-Add to the `.bashrc`:
+Run the following code:
 
 ```bash
 
-# Aliases & GIT
-if [ -e "${HOME}/.bash_aliases" ]; then
-    source "${HOME}/.bash_aliases"
-fi
-
-if [ -e "${HOME}/.bash_git" ]; then
-    source "${HOME}/.bash_git"
-fi
+cd ~/ && wget https://raw.githubusercontent.com/jsas-development/bash-helpers/master/loader -O ~/jsas-loader.txt && cat ~/jsas-loader.txt >> ~/.bashrc && rm -rf ~/jsas-loader.txt && source ~/.bashrc
 
 ```
